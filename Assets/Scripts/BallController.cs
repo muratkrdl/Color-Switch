@@ -31,6 +31,7 @@ public class BallController : MonoBehaviour
 
     public void Jump()
     {
+        myRigid.velocity = Vector2.zero;
         myRigid.AddForce(new Vector2(0f, jumpForce * Time.fixedDeltaTime));
     }
 
